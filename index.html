@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J2 Geradores - Tecnologia e Confiança para sua Empresa</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Especialistas em aluguel de geradores, automação e manutenção. Atendimento 24h com tecnologia de ponta.">
+    <meta name="keywords" content="geradores, aluguel geradores, automação, manutenção, energia">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="script.js" defer></script> <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="smooth-scroll bg-gray-50 font-inter">
+    
+    <header class="header-component shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="flex items-center space-x-3">
+                        <img src="images/logo.png" alt="J2 Geradores Logo" class="w-20 h-20"> 
+                        <div>
+                            <h1 class="text-xl font-bold">J2 Geradores</h1>
+                            <p class="text-xs text-gray-300">Não fique no escuro!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#home" class="header-link hover:text-primary transition-colors">Home</a>
+                    <a href="#servicos" class="header-link hover:text-primary transition-colors">Serviços</a>
+                    <a href="#sobre" class="header-link hover:text-primary transition-colors">Sobre Nós</a>
+                    <a href="#localizacao" class="header-link hover:text-primary transition-colors">Localização</a>
+                    <a href="#contato" class="header-link hover:text-primary transition-colors">Contato</a>
+                </nav>
+                
+                <button class="md:hidden text-white" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <nav class="flex flex-col space-y-2">
+                    <a href="#home" class="hover:text-primary transition-colors py-2">Home</a>
+                    <a href="#servicos" class="hover:text-primary transition-colors py-2">Serviços</a>
+                    <a href="#sobre" class="hover:text-primary transition-colors py-2">Sobre Nós</a>
+                    <a href="#localizacao" class="hover:text-primary transition-colors py-2">Localização</a>
+                    <a href="#contato" class="hover:text-primary transition-colors py-2">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-component hero-pattern py-20">
+        <div class="container mx-auto px-4 text-center text-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">J2 Geradores</h1>
+                    <p class="text-xl md:text-2xl mb-8">Não fique no escuro!</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="hero-card backdrop-blur-sm rounded-lg p-6">
+                        <i class="fas fa-phone text-2xl mb-3"></i>
+                        <h3 class="text-lg font-semibold mb-2">Atendimento</h3>
+                        <p class="text-lg">(16) 99174-2159</p>
+                    </div>
+                    <div class="hero-card backdrop-blur-sm rounded-lg p-6">
+                        <i class="fab fa-whatsapp text-2xl mb-3"></i>
+                        <h3 class="text-lg font-semibold mb-2">WhatsApp</h3>
+                        <p class="text-lg">(16) 99174-2159</p>
+                    </div>
+                </div>
+                
+                <button onclick="openWhatsApp()" class="bg-orange-600 text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-500 transition-colors shadow-lg">
+                    Solicitar Orçamento
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-16 section-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Nossos Serviços</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Soluções completas em energia para sua empresa</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden card-hover service-card">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="images/Gerador7.jpg" alt="Atendimento Emergencial" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary text-gray-600 px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">
+                            ATENDIMENTO EMERGENCIAL
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Atendimento 24/7</h3>
+                        <p class="text-gray-600 mb-4">Disponibilidade total para emergências. Nossa equipe está sempre pronta para atender sua necessidade de energia.</p>
+                        <button onclick="openWhatsApp()" class="text-primary font-semibold hover:underline">
+                            Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden card-hover service-card">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="images/Gerador3.jpg" alt="Automação de Geradores" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary text-gray-600 px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">
+                            AUTOMAÇÃO
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Automação Inteligente</h3>
+                        <p class="text-gray-600 mb-4">A automação de geradores na medida certa para sua empresa. Controle total e eficiência máxima.</p>
+                        <button onclick="openWhatsApp()" class="text-primary font-semibold hover:underline">
+                            Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden card-hover service-card">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="images/Gerador6.jpg" alt="Manutenção de Geradores" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary text-gray-600 px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">
+                            MANUTENÇÃO
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Manutenção Preventiva</h3>
+                        <p class="text-gray-600 mb-4">Manutenção especializada para garantir o funcionamento perfeito dos seus equipamentos.</p>
+                        <button onclick="openWhatsApp()" class="text-primary font-semibold hover:underline">
+                            Saiba mais <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 stats-component">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Por que escolher a J2 Geradores?</h2>
+                <p class="text-lg text-gray-600">Nossos diferenciais que fazem a diferença</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center stat-item">
+                    <div class="text-4xl md:text-5xl font-bold stats-number mb-2">100+</div>
+                    <p class="stats-text">MW gerados diariamente</p>
+                </div>
+                <div class="text-center stat-item">
+                    <div class="text-4xl md:text-5xl font-bold stats-number mb-2">1000+</div>
+                    <p class="stats-text">Projetos desenvolvidos</p>
+                </div>
+                <div class="text-center stat-item">
+                    <div class="text-4xl md:text-5xl font-bold stats-number mb-2">24/7</div>
+                    <p class="stats-text">Suporte todos os dias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 about-component">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold about-title mb-6">Sobre a J2 Geradores</h2>
+                    <p class="text-lg about-text mb-6">
+                        Trabalhamos para que sua única preocupação seja a sua operação. Com anos de experiência no mercado, 
+                        oferecemos soluções completas em energia para empresas de todos os portes.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle about-icon text-xl mr-3"></i>
+                            <span>Equipe e logística própria</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle about-icon text-xl mr-3"></i>
+                            <span>Transporte seguro e especializado</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle about-icon text-xl mr-3"></i>
+                            <span>Treinamento e instalação completa</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle about-icon text-xl mr-3"></i>
+                            <span>Suporte técnico 24 horas</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openWhatsApp()" class="mt-6 bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-500 transition-colors">
+                        Fale Conosco
+                    </button>
+                </div>
+                
+                <div class="h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+                    <img src="images/Gerador4.jpg" alt="Sobre J2 Geradores" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="py-16 stats-component">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Nossa Localização</h2>
+                <p class="text-lg text-gray-600">Encontre-nos facilmente</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="h-96 bg-gray-200 rounded-lg overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.0184383012297!2d-47.34927463505206!3d-20.54416303777382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0af69ac915991%3A0x9a86a688d8c7287b!2sAlameda%20Diamantes%2C%20619%20-%20Jardim%20Palestina%2C%20Franca%20-%20SP%2C%2014412-253!5e0!3m2!1spt-BR!2sbr!4v1761171855052!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Informações de Contato</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-primary text-xl mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Endereço</p>
+                                    <p class="text-gray-600">Rua Alameda dos Diamantes, 619<br>Jardim Palestina<br>Franca - SP, 14412-253</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-primary text-xl mr-3"></i>
+                                <div>
+                                    <p class="font-semibold">Telefone</p>
+                                    <p class="text-gray-600">(16) 99174-2159</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-primary text-xl mr-3"></i>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p class="text-gray-600">contato@j2geradores.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp text-primary text-xl mr-3"></i>
+                                <div>
+                                    <p class="font-semibold">WhatsApp</p>
+                                    <p class="text-gray-600">(16) 99174-2159</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openWhatsApp()" class="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-500 transition-colors">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 contact-component">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold contact-title mb-4">Entre em Contato</h2>
+                <p class="text-lg contact-subtitle">Estamos prontos para atender sua necessidade</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center service-card contact-card">
+                    <i class="fas fa-phone text-4xl contact-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Ligue Agora</h3>
+                    <p class="contact-subtitle mb-4">(16) 99174-2159</p>
+                    <a href="tel:1634891102" class="btn-primary px-6 py-2 rounded-lg transition-colors">
+                        Ligar
+                    </a>
+                </div>
+                
+                <div class="text-center service-card contact-card">
+                    <i class="fab fa-whatsapp text-4xl contact-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">WhatsApp</h3>
+                    <p class="contact-subtitle mb-4">(16) 99174-2159</p>
+                    <button onclick="openWhatsApp()" class="btn-primary px-6 py-2 rounded-lg transition-colors">
+                        Conversar
+                    </button>
+                </div>
+                
+                <div class="text-center service-card contact-card">
+                    <i class="fas fa-envelope text-4xl contact-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <p class="contact-subtitle mb-4">contato@j2geradores.com</p>
+                    <a href="mailto:contato@j2geradores.com" class="btn-primary px-6 py-2 rounded-lg transition-colors">
+                        Enviar Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-component py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 footer-logo-bg rounded-lg flex items-center justify-center mr-3">
+                            <img src="images/logo.png" alt="J2 Geradores Logo" class="w-20 h-18">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold footer-logo-text">J2 Geradores</h3>
+                            <p class="text-sm footer-slogan">Não fique no escuro</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Especialistas em soluções de energia para empresas. Aluguel de geradores, 
+                        automação e manutenção com qualidade e confiabilidade.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com" class="footer-link hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com" class="footer-link hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Menu</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="footer-link hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#servicos" class="footer-link hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="#sobre" class="footer-link hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="#localizacao" class="footer-link hover:text-white transition-colors">Localização</a></li>
+                        <li><a href="#contato" class="footer-link hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                    <div class="space-y-2 footer-link">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Franca - SP</p>
+                        <p><i class="fas fa-phone mr-2"></i> (16) 99174-2159</p>
+                        <p><i class="fab fa-whatsapp mr-2"></i> (16) 99174-2159</p>
+                        <p><i class="fas fa-envelope mr-2"></i> contato@j2geradores.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t footer-border mt-8 pt-8 text-center footer-link">
+                <p>© 2025 J2 Geradores. Todos os direitos reservados.</p>
+                <p class="mt-2">
+                    <a href="#" class="footer-link hover:text-white transition-colors">Política de Privacidade</a> | 
+                    <a href="#" class="footer-link hover:text-white transition-colors">Termos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-whatsapp">
+        <button onclick="openWhatsApp()" class="whatsapp-floating text-white p-4 rounded-full shadow-lg transition-colors">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </button>
+    </div>
+
+</body>
+</html>
