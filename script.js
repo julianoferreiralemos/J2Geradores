@@ -1,6 +1,6 @@
 function openWhatsApp() {
-    const phoneNumber = "5516991742159"; // Seu número do WhatsApp (formato internacional)
-    const message = "Olá! Gostaria de solicitar um orçamento para aluguel de geradores. Poderiam me ajudar?"; // Sua mensagem personalizada
+    const phoneNumber = "5516991742159";
+    const message = "Olá! Gostaria de solicitar um orçamento para aluguel de geradores. Poderiam me ajudar?";
     
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
