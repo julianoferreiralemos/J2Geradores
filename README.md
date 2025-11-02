@@ -78,7 +78,7 @@ O site foi desenvolvido com abordagem mobile-first, garantindo:
 
 - **Telefone**: (16) 99174-2159
 - **WhatsApp**: (16) 99174-2159
-- **Email**: contato@j2geradores.com
+- **Email**: j.2someeventos@hotmail.com
 - **Endereço**: Rua Alameda dos Diamantes, 619 - Jardim Palestina, Franca - SP
 
 ## 🚀 Como Executar
